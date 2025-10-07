@@ -1,2 +1,38 @@
-[]
-
+[
+  {
+    "marketId": "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
+    "chainId": 1,
+    "collateralToken": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+    "collateralSymbol": "wstETH",
+    "loanToken": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "loanSymbol": "USDC",
+    "oracle": "0x48F7E36EB6B826B2dF4B2E630B62Cd25e89E40e2",
+    "irm": "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+    "lltv": "945000000000000000",
+    "lltvPercent": 94.5
+  },
+  {
+    "marketId": "0xc54d7acf14de29e0e5527cabd7a576506870346a78a11a6762e2cca66322ec41",
+    "chainId": 1,
+    "collateralToken": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+    "collateralSymbol": "wstETH",
+    "loanToken": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    "loanSymbol": "WETH",
+    "oracle": "0x2a01EB9496094dA03c4E364Def50f5aD1280AD72",
+    "irm": "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+    "lltv": "945000000000000000",
+    "lltvPercent": 94.5
+  },
+  {
+    "marketId": "0x3a85e619751152991742810df6ec69ce473daef99e28a64ab2340d7b7ccfee49",
+    "chainId": 1,
+    "collateralToken": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+    "collateralSymbol": "WBTC",
+    "loanToken": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "loanSymbol": "USDC",
+    "oracle": "0xDddd770BADd886dF3864029e4B377B5F6a2B6b83",
+    "irm": "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+    "lltv": "860000000000000000",
+    "lltvPercent": 86.0
+  }
+]

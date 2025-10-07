@@ -1,2 +1,26 @@
-[]
-
+[
+  {
+    "chainId": 1,
+    "name": "ethereum",
+    "displayName": "Ethereum Mainnet",
+    "rpcUrl": "${RPC_URL_MAINNET}",
+    "nativeSymbol": "ETH",
+    "biconomyApiKey": "${BICONOMY_API_KEY}"
+  },
+  {
+    "chainId": 42161,
+    "name": "arbitrum",
+    "displayName": "Arbitrum One",
+    "rpcUrl": "${RPC_URL_ARBITRUM}",
+    "nativeSymbol": "ETH",
+    "biconomyApiKey": "${BICONOMY_API_KEY}"
+  },
+  {
+    "chainId": 8453,
+    "name": "base",
+    "displayName": "Base",
+    "rpcUrl": "${RPC_URL_BASE}",
+    "nativeSymbol": "ETH",
+    "biconomyApiKey": "${BICONOMY_API_KEY}"
+  }
+]

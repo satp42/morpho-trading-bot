@@ -1,2 +1,10 @@
-{}
-
+{
+  "targetUtilizationRange": {
+    "min": 0.7,
+    "max": 0.9
+  },
+  "minAPYDeltaToSwitch": 0.005,
+  "maxLoopDepth": 3,
+  "maxLTVBuffer": 0.05,
+  "maxGasUSD": 50
+}
