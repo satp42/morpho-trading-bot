@@ -8,6 +8,7 @@ export interface ChainConfig {
   rpcUrl: string;
   nativeSymbol: string;
   biconomyApiKey: string;
+  morphoBlueAddress: string;
 }
 
 function validateChainConfig(config: unknown): asserts config is ChainConfig {
@@ -39,6 +40,10 @@ function validateChainConfig(config: unknown): asserts config is ChainConfig {
 
   if (typeof c.biconomyApiKey !== 'string' || c.biconomyApiKey.length === 0) {
     throw new Error('biconomyApiKey must be a non-empty string');
+  }
+
+  if (typeof c.morphoBlueAddress !== 'string' || !/^0x[a-fA-F0-9]{40}$/.test(c.morphoBlueAddress)) {
+    throw new Error('morphoBlueAddress must be a valid Ethereum address');
   }
 }
 

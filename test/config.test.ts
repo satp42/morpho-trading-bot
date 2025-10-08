@@ -16,6 +16,7 @@ describe('config', () => {
       rpcUrl: 'http://test.com',
       nativeSymbol: 'ETH',
       biconomyApiKey: 'test-key',
+      morphoBlueAddress: '0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb',
     },
     {
       chainId: 42161,
@@ -24,6 +25,7 @@ describe('config', () => {
       rpcUrl: 'http://arb.com',
       nativeSymbol: 'ETH',
       biconomyApiKey: 'test-key',
+      morphoBlueAddress: '0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb',
     },
   ];
 

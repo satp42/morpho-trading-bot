@@ -12,6 +12,7 @@ describe('config-loader', () => {
       rpcUrl: '${RPC_URL}',
       nativeSymbol: 'ETH',
       biconomyApiKey: '${BICONOMY_KEY}',
+      morphoBlueAddress: '0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb',
     },
     {
       chainId: 42161,
@@ -20,6 +21,7 @@ describe('config-loader', () => {
       rpcUrl: '${RPC_URL_ARB}',
       nativeSymbol: 'ETH',
       biconomyApiKey: '${BICONOMY_KEY}',
+      morphoBlueAddress: '0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb',
     },
   ];
 
@@ -111,6 +113,30 @@ describe('config-loader', () => {
       fs.writeFileSync(testConfigPath, JSON.stringify(validConfig));
 
       expect(() => loadChainConfigs(testConfigPath, {})).toThrow('Environment variable');
+    });
+
+    it('should throw on invalid morphoBlueAddress format', () => {
+      const invalid = [{ ...validConfig[0], morphoBlueAddress: '0x123' }];
+      fs.writeFileSync(testConfigPath, JSON.stringify(invalid));
+
+      expect(() => loadChainConfigs(testConfigPath, mockEnv)).toThrow('morphoBlueAddress must be');
+    });
+
+    it('should throw on missing morphoBlueAddress', () => {
+      const invalid = [{ ...validConfig[0] }];
+      delete (invalid[0] as any).morphoBlueAddress;
+      fs.writeFileSync(testConfigPath, JSON.stringify(invalid));
+
+      expect(() => loadChainConfigs(testConfigPath, mockEnv)).toThrow('morphoBlueAddress must be');
+    });
+
+    it('should accept valid morphoBlueAddress', () => {
+      fs.writeFileSync(testConfigPath, JSON.stringify(validConfig));
+
+      const configs = loadChainConfigs(testConfigPath, mockEnv);
+
+      expect(configs[0].morphoBlueAddress).toBe('0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb');
+      expect(configs[1].morphoBlueAddress).toBe('0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb');
     });
   });
 

@@ -5,7 +5,8 @@
     "displayName": "Ethereum Mainnet",
     "rpcUrl": "${RPC_URL_MAINNET}",
     "nativeSymbol": "ETH",
-    "biconomyApiKey": "${BICONOMY_API_KEY}"
+    "biconomyApiKey": "${BICONOMY_API_KEY}",
+    "morphoBlueAddress": "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb"
   },
   {
     "chainId": 42161,
@@ -13,7 +14,8 @@
     "displayName": "Arbitrum One",
     "rpcUrl": "${RPC_URL_ARBITRUM}",
     "nativeSymbol": "ETH",
-    "biconomyApiKey": "${BICONOMY_API_KEY}"
+    "biconomyApiKey": "${BICONOMY_API_KEY}",
+    "morphoBlueAddress": "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb"
   },
   {
     "chainId": 8453,
@@ -21,6 +23,7 @@
     "displayName": "Base",
     "rpcUrl": "${RPC_URL_BASE}",
     "nativeSymbol": "ETH",
-    "biconomyApiKey": "${BICONOMY_API_KEY}"
+    "biconomyApiKey": "${BICONOMY_API_KEY}",
+    "morphoBlueAddress": "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb"
   }
 ]
